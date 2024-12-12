@@ -642,3 +642,170 @@ background-color: #b19265;
   /******check code********/
 
   
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    /* On medium-sized screens (tablets and smaller laptops), stack the elements vertically */
+    .home-content {
+      flex-direction: column; /* Stack the content vertically */
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .home-content .image-side img {
+      max-width: 90%; /* Limit the image width on smaller screens */
+    }
+  
+    /* Adjust text size on smaller screens */
+    .home-content .text-side h1 {
+      font-size: 28px; /* Adjust heading size for better readability */
+    }
+  
+    .home-content .text-side p {
+      font-size: 18px; /* Adjust paragraph font size */
+    }
+  }
+  
+  /* Tablet and smaller screens */
+  @media (max-width: 767px) {
+    .home-content {
+      padding: 10px;
+      gap: 20px;
+    }
+  
+    .home-content .image-side img {
+      max-width: 100%; /* Ensure image is full width on small screens */
+    }
+  
+    /* Adjust button for smaller screens */
+    .home-content button {
+      max-width: 250px; /* Slightly smaller button on mobile */
+    }
+  }
+  /*****************/
+ /* Default layout for large screens (laptops and desktops) */
+.classes-content {
+    display: flex;
+    flex-direction: row; /* Image and content side by side */
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .classes-content .image-side img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .classes-content .text-side {
+    flex: 1;
+  }
+  
+  .classes-content .points-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .classes-content .points-list li {
+    margin-bottom: 10px;
+  }
+  
+  /* Tablet screens and below (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .classes-content {
+      flex-direction: column; /* Stack content vertically */
+      align-items: center; /* Center the content */
+      gap: 20px; /* Space between image and text */
+      padding: 20px 10px; /* Padding for proper spacing */
+    }
+  
+    .classes-content .image-side img {
+      max-width: 100%; /* Make image responsive on tablets */
+      margin-bottom: 20px; /* Space between image and points */
+    }
+  
+    .classes-content .text-side {
+      width: 100%;
+      text-align: center; /* Center the text */
+    }
+  
+    .classes-content .section-title {
+      font-size: 24px;
+      margin-bottom: 10px; /* Space between title and points */
+    }
+  
+    .classes-content .points-list li {
+      font-size: 16px;
+      margin-bottom: 12px; /* Space between points */
+    }
+      .points-right p {
+        font-size: .8rem;
+        color: #0a2179;
+        font-weight: bold;
+        margin: 5px 0;
+      }
+      .points-left p {
+        font-size: .8rem;
+        color: #0a2179;
+        font-weight: bold;
+        margin: 5px 0;
+      }
+      .update-text h5 {
+        color: #881018;
+        font-size: 1.4rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+  }
+ 
+  /* Mobile screens (max-width: 767px) */
+  @media (max-width: 767px) {
+    .classes-content {
+      padding: 10px; /* Less padding on mobile */
+      gap: 15px; /* Space between image and text */
+      text-align: center; /* Ensure content is centered */
+    }
+  
+    .classes-content .image-side img {
+      max-width: 100%; /* Image takes up full width */
+      margin-bottom: 20px; /* Ensure space between image and points */
+    }
+  
+    .classes-content .text-side {
+      width: 100%;
+    }
+  
+    .classes-content .section-title {
+      font-size: 20px;
+      margin-bottom: 8px; /* Space between title and points */
+    }
+  
+    .classes-content .points-list li {
+      font-size: 14px; /* Smaller font size */
+      margin-bottom: 10px; /* Space between points */
+    }
+    .points-right p {
+        font-size: .4rem;
+        color: #0a2179;
+        font-weight: bold;
+        margin: 5px 0;
+      }
+      .points-left p {
+        font-size: .4rem;
+        color: #0a2179;
+        font-weight: bold;
+        margin: 5px 0;
+      }
+      .update-text h5 {
+        color: #881018;
+        font-size: 1rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+    color: #efed62;
+    font-family: Garamond(serif);
+}
+  
+  }
